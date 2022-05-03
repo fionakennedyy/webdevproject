@@ -1,0 +1,14 @@
+I have two ideas for my website this semester:
+
+1. Stardew Valley Crop Planner
+    A website that fans of the farming game Stardew Valley can use to keep
+    track of what crops they planted and when they will be ready to be
+    harvested. They will be able to save their stats and crop plans so
+    they can revisit them in order to use them again!
+
+2. Dream Journal Blog
+    A blog where users can sign up and post their dreams to their own blog
+    in order to keep track of and share them. Users will also have access
+    to an explore page where they can see other users' blogs!
+
+I'd love to hear which website you think would be better to create!

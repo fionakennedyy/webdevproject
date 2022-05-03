@@ -1,0 +1,41 @@
+form {
+    box-shadow: 3px 3px #a69bd1;
+    border-radius: 5px;
+    padding: 20px;
+    width: max-content;
+    background-color: lavender;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+
+input[type="submit"] {
+    display: block;
+    color:#a69bd1;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+body {
+    background-color:#a69bd1;
+}
+
+hr {
+    border-top: 1px solid #a69bd1;
+}
