@@ -1,0 +1,30 @@
+{
+  "name": "music-forum",
+  "version": "1.0.0",
+  "description": "forum to discuss/recommend music",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fionakennedyy/webdevproject.git"
+  },
+  "keywords": [
+    "music",
+    "forum"
+  ],
+  "author": "Fiona Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fionakennedyy/webdevproject/issues"
+  },
+  "homepage": "https://github.com/fionakennedyy/webdevproject#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -3,7 +3,7 @@ import
 from './main.js'
 
 const loginForm = document.getElementById("login-form");
-if(loginForm) loginForm.addEventListener('submit', login);
+if(loginForm) loginForm.addEventListener('loginbtn', login);
 
 function login(e) {
   e.preventDefault();

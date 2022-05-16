@@ -1,16 +1,19 @@
 form {
-    box-shadow: 3px 3px #a69bd1;
-    border-radius: 5px;
+    box-shadow: 3px 3px #b064a0;
+    border-radius: 10px;
     padding: 20px;
-    width: max-content;
-    background-color: lavender;
+    background-color: #f2acdd;
     letter-spacing: 2px;
     text-align: center;
     margin: auto;
+    margin-top: 7px;
+    display: inline-block;
 }
 
 body {
     font-family: "Cute Font", sans-serif;
+    background-color: #f4d9fc;
+    margin: 10px;
 }
 
 input {
@@ -30,7 +33,17 @@ input[type="submit"] {
     font-size: 30px;
 }
 
-h1 {
+input[type="file"] {
+    display: block;
+    color: hotpink;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-family: "Cute Font", sans-serif;
+    font-size: 20px;
+}
+
+h1.formtitle {
     letter-spacing: 2px;
     background-color: #ffffff;
     padding: 10px 20px;
@@ -38,12 +51,12 @@ h1 {
     border-color: black;
 }
 
-body {
-    background-color: #a69bd1;
+h1, h2 {
+    margin-right: 0px;
 }
 
 hr {
-    border-top: 1px solid #a69bd1;
+    border-top: 1px solid #f4d9fc;
 }
 
 .nav {
@@ -63,6 +76,37 @@ hr {
     float: left;
 }
 
-#login, #register {
+#login, #register , #profile {
     float: right;
+}
+
+form.gotw {
+    float: right;
+    margin: auto;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+
+hr {
+    color: #b064a0;
+}
+
+div.postlist {
+    background-color: white;
+    padding: 25px;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+div.title {
+    padding-left: 25px;
+}
+
+#center {
+    margin: auto;
+    display: flex;
+}
+
+#footer {
+    position: fixed;
 }

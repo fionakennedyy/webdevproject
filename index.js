@@ -1,9 +1,12 @@
-const express = require('express');
-const app = express();
+const express = require('express'); //allows us to use express
+const app = express(); //allows us to execute express
 const path = require('path');
 
-const userRoutes = require('./server/routes/user');
-const assessmentRoutes = require('./server/routes/assessment');
+const userRoutes = require('./server/routes/userR'); //gives us access to all routes in user
+const postRoutes = require(".server/routes/postR");
+const commentRoutes = require(".server/routes/commentR");
+
+//const assessmentRoutes = require('./server/routes/assessment');
 
 app.use(express.json()); //To parse JSON bodies (Applicable for Express 4.16+)
 
@@ -19,7 +22,6 @@ app.use(function(req, res, next) {
 });
 
 app.use("/users", userRoutes);
-app.use("/assessment", assessmentRoutes);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server started on port ${PORT}!`));
+const PORT = process.env.PORT || 3000; //server can be accessed via http://localhost:3000
+app.listen(PORT, () => console.log(`Server started on port ${PORT}!`)); //starts the server
