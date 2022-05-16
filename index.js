@@ -4,14 +4,16 @@ const path = require('path');
 
 const userRoutes = require('./server/routes/userR'); //gives us access to all routes in user
 const postRoutes = require(".server/routes/postR");
-const commentRoutes = require(".server/routes/commentR");
 
 //const assessmentRoutes = require('./server/routes/assessment');
 
 app.use(express.json()); //To parse JSON bodies (Applicable for Express 4.16+)
-
 app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/homepage.html')))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public', 'homepage.html')))
+
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public', 'homepage.html'));
+})
 
 //CORS middleware
 app.use(function(req, res, next) {
@@ -21,7 +23,8 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use("/users", userRoutes);
+app.use("/user", userRoutes);
+app.use("/post", postRoutes);
 
 const PORT = process.env.PORT || 3000; //server can be accessed via http://localhost:3000
 app.listen(PORT, () => console.log(`Server started on port ${PORT}!`)); //starts the server

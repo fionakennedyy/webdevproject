@@ -109,4 +109,8 @@ div.title {
 
 #footer {
     position: fixed;
+    width: 100%;
+    display: block;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
 }
