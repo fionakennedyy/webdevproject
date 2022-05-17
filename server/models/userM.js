@@ -84,4 +84,4 @@ function userExists(username) {
   return users.filter((u) => u.userName === username);
 }
 
-module.exports = { getUsers, register, login};
+module.exports = {getUsers, register, login};

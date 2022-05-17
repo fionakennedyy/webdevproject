@@ -12,7 +12,11 @@ router
     }
   })
 
-  .post('/registerpage', async (req, res) => {
+  .post('/login', async (req, res) => {
+    res.send({});
+  })
+
+  .post('/register', async (req, res) => {
   try {
     const user = await User.register(req.body);
     res.send({...user, password: undefined});

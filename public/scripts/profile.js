@@ -5,7 +5,7 @@ from './main.js'
 
 let user = getCurrentUser();
 
-if(!user) window.location.href = "login.html";
+if(!user) window.location.href = "loginpage.html";
 
 let profile = document.getElementById("profile");
 profile.innerHTML = `

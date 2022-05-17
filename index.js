@@ -3,9 +3,7 @@ const app = express(); //allows us to execute express
 const path = require('path');
 
 const userRoutes = require('./server/routes/userR'); //gives us access to all routes in user
-const postRoutes = require(".server/routes/postR");
-
-//const assessmentRoutes = require('./server/routes/assessment');
+const postRoutes = require('./server/routes/postR');
 
 app.use(express.json()); //To parse JSON bodies (Applicable for Express 4.16+)
 app.use(express.static(__dirname + "/public"));

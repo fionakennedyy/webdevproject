@@ -114,3 +114,13 @@ div.title {
     padding: 10px 10px 0px 10px;
     bottom: 0;
 }
+
+nav.a {
+    width: fit-content;
+    display: inline;
+    padding: 0px;
+}
+
+li {
+    width: fit-content;
+}

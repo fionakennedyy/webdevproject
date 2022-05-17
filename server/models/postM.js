@@ -1,10 +1,15 @@
-function Post(id, content, author, commentnum){
+function Post(id, title, content, author, commentnum){
     this.PostId = id;
+    this.PostTitle = title;
     this.PostContent = content;
     this.PostAuthor = author;
     this.PostCommentnum = commentnum;
   }
   
+  Post.prototype.getPostTitle = function () {
+    return this.PostTitle;
+  }
+
   Post.prototype.getPostContent = function () {
     return this.PostContent;
   }
@@ -16,7 +21,11 @@ function Post(id, content, author, commentnum){
   Post.prototype.getPostCommentnum = function () {
     return this.PostCommentnum;
   }
-  
+
+  Post.prototype.setPostTitle = function (title) {
+    this.PostTitle = title;
+  }
+
   Post.prototype.setPostComment = function (content) {
     this.PostContent = content;
   }
@@ -28,3 +37,5 @@ function Post(id, content, author, commentnum){
   Post.prototype.setPostCommentnum = function (commentnum) {
     this.PostBCommentnum = commentnum;
   }
+
+  
