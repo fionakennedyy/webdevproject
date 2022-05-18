@@ -14,7 +14,7 @@ My example threads are not showing up when I input them in javascript, so I will
 ***
 **Front-End**
 * HTML
-* CSS
+* CSS\
 **Back-End**
 * JavaScript
 * Node.js
@@ -22,19 +22,21 @@ My example threads are not showing up when I input them in javascript, so I will
 
 # Entity-Relationship Diagram (ERD)
 ***
-![Image](ERD.PNG)
-***
-**Entity Descriptions**
-USER: The USER entity stores the info given by the user when they register, as well as an ID.
-(id, username, password, email, birthdate)
-***
-POST: The POST entity stores the info when a new POST is created by a USER, as well as an ID.
-(id, title, content, author, commentnum)
-***
-COMMENT: The COMMENT entity stores the info when a new COMMENT is created by a USER on a POST, as well as an ID. It also links to the POST entity and stores the POST ID, so we can tell which POST it is under.
-(id, postid, content, author)
-***
+![Image](ERD.PNG)\
+
+**Entity Descriptions**\
+
+USER: The USER entity stores the info given by the user when they register, as well as an ID.\
+(id, username, password, email, birthdate)\
+
+POST: The POST entity stores the info when a new POST is created by a USER, as well as an ID.\
+(id, title, content, author, commentnum)\
+
+COMMENT: The COMMENT entity stores the info when a new COMMENT is created by a USER on a POST, as well as an\ ID. It also links to the POST entity and stores the POST ID, so we can tell which POST it is under.\
+(id, postid, content, author)\
+
 **Business Rules**
+
 A USER may create any number of POSTs. Each POST must be created by exactly one USER.
 A USER may create any number of COMMENTs on a POST. Each COMMENT must be created by exactly one USER.
 A COMMENT is contained in exactly one POST. Each POST contains any number of COMMENTs.
