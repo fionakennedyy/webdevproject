@@ -67,17 +67,9 @@ hr {
 .nav a {
     color: aliceblue;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 15px 15px;
     font-size: 30px;
-}
-
-#home {
-    float: left;
-}
-
-#login, #register , #profile {
-    float: right;
 }
 
 form.gotw {
@@ -122,5 +114,7 @@ nav.a {
 }
 
 li {
-    width: fit-content;
+    max-width: fit-content;
+    margin-right: 0px;
+    display: inline;
 }

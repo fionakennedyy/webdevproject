@@ -2,9 +2,7 @@ import
 { getCurrentUser, setCurrentUser, removeCurrentUser, logout, fetchData } 
 from './main.js'
 
-
 let user = getCurrentUser();
-
 if(!user) window.location.href = "loginpage.html";
 
 let profile = document.getElementById("profile");
@@ -18,8 +16,6 @@ profile.innerHTML = `
 `;
 
 document.getElementById("edit").addEventListener('click', editProfile);
-document.getElementById("delete").addEventListener('click', deleteAccount);
-
 function editProfile() {
   profile.classList.toggle("hide");
   let editForm = document.getElementById("editForm");
@@ -75,6 +71,7 @@ function editAccount(e) {
   }
 }
 
+document.getElementById("delete").addEventListener('click', deleteAccount);
 function deleteAccount() {
   if(confirm('Are you sure you want to delete your account???')) {
     fetchData('/users/delete', {userId: user.user_id}, "DELETE")

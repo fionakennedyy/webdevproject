@@ -26,7 +26,7 @@ function Post(id, title, content, author, commentnum){
     this.PostTitle = title;
   }
 
-  Post.prototype.setPostComment = function (content) {
+  Post.prototype.setPostContent = function (content) {
     this.PostContent = content;
   }
   
@@ -35,7 +35,5 @@ function Post(id, title, content, author, commentnum){
   }
 
   Post.prototype.setPostCommentnum = function (commentnum) {
-    this.PostBCommentnum = commentnum;
+    this.PostCommentnum = commentnum;
   }
-
-  
