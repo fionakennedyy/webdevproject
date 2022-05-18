@@ -15,7 +15,7 @@ My example threads are not showing up when I input them in javascript, so I will
 **Front-End**
 
 * HTML
-* CSS\
+* CSS
 
 **Back-End**
 
